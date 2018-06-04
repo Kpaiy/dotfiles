@@ -15,18 +15,18 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'joshdick/onedark.vim'
 Plugin 'itchyny/lightline.vim'
+Plugin 'dylanaraps/wal.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
 set laststatus=2
 
-colorscheme onedark
 hi Normal guibg=NONE ctermbg=NONE
 
 set noshowmode
@@ -36,8 +36,13 @@ set updatetime=750
 inoremap <S-Tab> <C-d>
 
 let g:lightline = {
-\  'colorscheme': 'onedark'
+\  'colorscheme': 'wal'
 \ }
 
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
+colorscheme wal
+
+let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
+
+
+set sessionoptions=blank,winsize,tabpages,resize

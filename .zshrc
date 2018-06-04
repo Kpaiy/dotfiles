@@ -26,7 +26,7 @@ ZSH_THEME="blinks"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -88,7 +88,11 @@ alias python=python3.6
 alias pip=pip3.6
 alias uni='cd /Windows/Users/Craig\ Smith/Documents/Uni'
 
+cat ~/.cache/wal/sequences
+
 eval "$(thefuck --alias)" 
 
 alias aq="sudo apt-get install"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+. /$HOME/bin/z/z.sh
