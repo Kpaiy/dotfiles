@@ -22,6 +22,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
 Plugin 'rust-lang/rust.vim'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'w0rp/ale'
 call vundle#end()
 filetype plugin indent on
 
@@ -43,6 +45,5 @@ colorscheme wal
 
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
-
 
 set sessionoptions=blank,winsize,tabpages,resize
