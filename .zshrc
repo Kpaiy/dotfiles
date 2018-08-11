@@ -87,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 alias python=python3.6
 alias pip=pip3.6
 alias uni='cd /Windows/Users/Craig\ Smith/Documents/Uni'
+alias vscode=code
+alias is="ionic serve --no-open"
 
 cat ~/.cache/wal/sequences
 
@@ -96,3 +98,6 @@ alias aq="sudo apt-get install"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 . /$HOME/bin/z/z.sh
+
+# added by travis gem
+[ -f /home/kpaiy/.travis/travis.sh ] && source /home/kpaiy/.travis/travis.sh

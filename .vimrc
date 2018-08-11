@@ -23,6 +23,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
 Plugin 'rust-lang/rust.vim'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'Yggdroot/indentLine'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'w0rp/ale'
 call vundle#end()
 filetype plugin indent on
@@ -41,9 +43,18 @@ let g:lightline = {
 \  'colorscheme': 'wal'
 \ }
 
+let g:indentLine_char = '▏'
+
 colorscheme wal
 
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 set sessionoptions=blank,winsize,tabpages,resize
+
+" Project tree settings
+" https://shapeshed.com/vim-netrw/
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 20
