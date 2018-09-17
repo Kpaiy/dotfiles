@@ -84,8 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias please="sudo "
-alias python=python3.6
-alias pip=pip3.6
 alias uni='cd /Windows/Users/Craig\ Smith/Documents/Uni'
 alias vscode=code
 alias is="ionic serve --no-open"
