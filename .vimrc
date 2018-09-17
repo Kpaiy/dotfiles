@@ -31,6 +31,11 @@ set updatetime=750
 
 inoremap <S-Tab> <C-d>
 
+" tab keybinds
+map <C-E> :tabc <Enter>
+map <C-T> :tabnew <Enter>
+map <C-D> :Vex <Enter>
+
 colorscheme wal
 
 let g:lightline = {
