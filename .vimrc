@@ -6,18 +6,27 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'w0rp/ale'
+" Style
 Plugin 'dylanaraps/wal.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'maximbaz/lightline-ale'
 Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+" Linter
+Plugin 'w0rp/ale'
+" Indent Guidlines
+Plugin 'Yggdroot/indentLine'
+" TypeScript
+Plugin 'leafgarland/typescript-vim'
+" React extensions
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'peitalin/vim-jsx-typescript'
+" Rust
+Plugin 'rust-lang/rust.vim'
+" Other
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ervandew/supertab'
-Plugin 'rust-lang/rust.vim'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'Yggdroot/indentLine'
-Plugin 'leafgarland/typescript-vim'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
@@ -71,6 +80,11 @@ let g:lightline.active = { 'right': [
       \              [ 'fileformat', 'fileencoding', 'filetype' ]
       \              ] }
 
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {'javascript': ['standard']}
+
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -81,6 +95,7 @@ set textwidth=80
 
 set number
 set hlsearch
+
 
 set mouse="c"
 
