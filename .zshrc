@@ -94,6 +94,7 @@ eval "$(thefuck --alias)"
 
 alias aq="sudo apt-get install"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias phoughsczhiene='git push'
 
 . /$HOME/bin/z/z.sh
 
